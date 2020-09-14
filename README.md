@@ -6,6 +6,21 @@
 4. Create a database with the name "airasiadb"
 5. Create a user with name "sameer" and grant access to "airasiadb"
 
+API Call:
+/Booking/create
+Data Required:
+	Long customerId;
+	String firstName;
+	String lastName;
+	String email;
+	String phoneNumber;
+	Long hotelId;
+	String hotelName;
+	Long roomId;
+	String roomName;
+	int numberOfGuests;
+	Date from;
+	Date to;
 
 Assumption(s):
 1. Hotels are already available in the database for query to successfully append booking to the database.

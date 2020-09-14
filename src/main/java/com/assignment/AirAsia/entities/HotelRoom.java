@@ -22,6 +22,6 @@ public class HotelRoom {
 	private int numberOfSingleBeds;
 	private int numberOfDoubleBeds;
 	private int roomCapacity;
-	
+	private float dailyRate;
 	private boolean isOccupied;
 }

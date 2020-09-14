@@ -23,8 +23,8 @@ public class NewBooking {
 	private String roomName;
 	private int numberOfGuests;
 	
-	private float unitAmount;
-	private float totalAmount;
+//	private float unitAmount;
+//	private float totalAmount;
 	
 	private Date from;
 	private Date to;

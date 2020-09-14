@@ -15,7 +15,7 @@ import com.assignment.AirAsia.services.BookingService;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/Order")
+@RequestMapping("/Booking")
 @RequiredArgsConstructor
 public class BookingAPI {
 	

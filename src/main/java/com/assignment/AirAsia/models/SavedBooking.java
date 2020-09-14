@@ -17,6 +17,9 @@ public class SavedBooking {
 	private String customerName;
 	private String customerEmail;
 	private int numberOfGuests;
+	private long totalDays;
+	private float dailyCost;
+	private float totalCost;
 	
 	
 	public static SavedBooking ToModel(Booking entity) {
@@ -29,6 +32,9 @@ public class SavedBooking {
 			model.customerName = entity.getCustomer().getFirstName() + " " + entity.getCustomer().getLastName();
 			model.customerEmail = entity.getCustomer().getEmail();
 			model.numberOfGuests = entity.getNumberOfGuests();
+			model.totalDays = (model.to.getTime() - model.from.getTime()) / (1000 * 60 * 60 * 24);
+			model.dailyCost = entity.getRoom().getDailyRate();
+			model.totalCost = model.totalDays * model.dailyCost;
 		}
 		return model;
 	}
